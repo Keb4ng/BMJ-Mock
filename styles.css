@@ -1,0 +1,154 @@
+:root {
+  --c-primary: #2a6ebb;
+  --c-secondary: #39568f;
+  --c-accent: #13213e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: interfaceregular, Helvetica, Arial, sans-serif, "宋体", STXihei,
+    "微软雅黑", "Microsoft Yahei", "Microsoft YaHei New";
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  width: 90%;
+  height: auto;
+  max-width: 1170px;
+  display: block;
+  margin: auto;
+}
+
+.custom-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  z-index: 10;
+  position: relative;
+}
+
+.custom-col {
+  width: calc(100% / 2);
+  position: relative;
+  z-index: 10;
+}
+
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-cont {
+  width: 100%;
+  max-width: 214px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.logo-cont img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.header-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  padding: 2.5rem 0;
+  border-bottom: solid 2px #b4b4b4;
+}
+
+.header-flex ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.header-flex ul li {
+  font-size: 21px;
+  color: var(--c-primary);
+  font-weight: bold;
+}
+
+.cs-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.cs-subt {
+  font-size: 17px;
+  padding-bottom: 2rem;
+}
+
+.content {
+  margin-top: 2rem;
+}
+
+.cs-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cs-icons i {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--c-primary);
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.cs-icons div {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  margin-left: 2rem;
+  color: var(--c-primary);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: solid 2px #b4b4b4;
+}
+
+.footer-links li a {
+  color: var(--c-primary);
+}
+
+.footer-credits {
+  float: right;
+  font-size: 16px;
+  font-weight: regular;
+  margin-top: 2rem;
+}
