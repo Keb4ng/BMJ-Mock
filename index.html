@@ -96,6 +96,7 @@
         </p>
       </div>
     </footer>
+    <!--     
     <script type="text/javascript">
       function initEmbeddedMessaging() {
         try {
@@ -117,6 +118,30 @@
     <script
       type="text/javascript"
       src="https://bmj--staging.sandbox.my.site.com/ESWBMJMessagingExternal1752487867475/assets/js/bootstrap.min.js"
+      onload="initEmbeddedMessaging()"
+    ></script> -->
+
+    <script type="text/javascript">
+      function initEmbeddedMessaging() {
+        try {
+          embeddedservice_bootstrap.settings.language = "en_US"; // For example, enter 'en' or 'en-US'
+
+          embeddedservice_bootstrap.init(
+            "00DVc000002QBTJ",
+            "MWIA",
+            "https://bmj--staging.sandbox.my.site.com/ESWMWIA1751364069175",
+            {
+              scrt2URL: "https://bmj--staging.sandbox.my.salesforce-scrt.com"
+            }
+          );
+        } catch (err) {
+          console.error("Error loading Embedded Messaging: ", err);
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://bmj--staging.sandbox.my.site.com/ESWMWIA1751364069175/assets/js/bootstrap.min.js"
       onload="initEmbeddedMessaging()"
     ></script>
   </body>
